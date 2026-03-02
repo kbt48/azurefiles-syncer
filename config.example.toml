@@ -1,0 +1,15 @@
+[azure]
+# Azure Storage アカウントの接続文字列（Azureポータルから取得）
+connection_string = "DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT;AccountKey=YOUR_KEY;EndpointSuffix=core.windows.net"
+# 同期対象のファイル共有名
+share_name = "encoded-videos"
+
+[sync]
+# 共有内の監視対象ディレクトリ（ルートの場合は空文字 "" または特定のパス "some/folder"）
+source_dir = ""
+target_dir = "C:\\SyncTarget"
+scan_interval = 5
+
+# ファイルサイズの変動が止まってから同期を開始するまでの待機時間（秒）
+# 大きなファイルの書き込み途中での不完全なコピーを防ぐための「落ち着き時間」です。
+settle_time = 5
