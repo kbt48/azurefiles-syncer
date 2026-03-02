@@ -1,4 +1,5 @@
 # Azure Files Syncer
+[![Build Windows Executable](https://github.com/kbt48/azurefiles-syncer/actions/workflows/build-windows.yml/badge.svg)](https://github.com/kbt48/azurefiles-syncer/actions/workflows/build-windows.yml)
 
 Azure Files 上の指定ディレクトリを監視し、ローカルPCの指定ディレクトリへファイルを同期（ダウンロード）するツールです。動画ファイルなど、数百MB以上の大容量ファイルの同期を想定して設計されています。
 
